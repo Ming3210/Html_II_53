@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        ĐỒNG BỘ VÀ BẤT ĐỒNG BỘ
+        ĐỒNG BỘ : Synchronous
+        BẤT ĐỘNG BỘ : Asynchronous
+        Js : là 1 ngôn ngữ đơn luồng là chỉ chạy 1 luồng duy nhất
+        luồng code chạy, chạy tư trái qua phải ==> từ trên xuống dưới
+        Q/A : Tại sao js ko chạy đa luồng mà chỉ chạy đơn luồng
+        Vì khi chạy đa luồng các luồng sẽ chia sẻ tài nguyên lẫn nhau ảnh hưởng đến code lẫn nhau
+        Tư duy ban đầu của JS là đơn luồng  
+        Khi gặp các tác vụ cần tgian xử lí ( chọc vào database, gửi request lên server, đọc file, ghi file trong Nodejs,...) thk js sẽ ko đợi các tác vụ này xử lí xong r mới đến tác vụ khác
+        3 cách để giải quyết các tác vụ bất đồng bộ
+        - Callback là gì : 
+            + Callback là hàm đc truyền vào làm đối số của hàm khác
+        - Promise
+        - Async Await
+    -->
+</body>
+<!-- <script>
+    let sdt;
+    function xinSdt(callback){
+        console.log("Hoang goi cho Quynh xin so Phuong Anh");
+        console.log("Quynh nói đợi tí để tìm số");
+        setTimeout(()=>{
+            sdt = 1231231312;
+            callback(sdt)
+        },1000)
+       
+        // => Hoàng gọi cho Phuong Anh theo số undefined
+    }
+    xinSdt(goiKhiCoSoPhuongAnh);
+    // dùng callback để giải quyết vđ
+    // Tạo hàm khi nào có số r ms gọi
+    function goiKhiCoSoPhuongAnh(sdt){
+        console.log(`Hoàng gọi cho Phuong Anh theo số ${sdt}`);
+    }
+
+    //ham map
+    // let arr = [1,2,3,4,5]
+    // let result = arr.map((item)=>item*2)
+    // console.log(result);
+    // // Tao 1 ham nhu ham map
+
+    function customMap(arr,callback){
+        let resultArr = [];
+        for (const value of arr) {
+            resultArr.push(callback(value));
+        }
+        return resultArr
+    }
+    let arr= [1,2,3,4,5,6]
+    console.log("Gia tri mang moi", customMap(arr,(item)=>item*2));
+</script> -->
+<!-- <script src="B1.js"></script> -->
+<!-- <script src="B2.js"></script> -->
+<!-- <script src="B3.js"></script> -->
+<!-- <script src="B4.js"></script> -->
+<!-- <script src="B5.js"></script> -->
+<!-- <script src="B6.js"></script> -->
+<!-- <script src="B7.js"></script> -->
+<!-- <script src="B8.js"></script> -->
+<!-- <script src="B9.js"></script> -->
+<script src="B10.js"></script>
+
+</html>
