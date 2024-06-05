@@ -6,8 +6,8 @@ function myFilter(arr:number[], value:number, callback:Function){
             result.push(arr[i]);
         }
     }
-    console.log(result);
-    return result;
+    
+    return [];
     
 }
 

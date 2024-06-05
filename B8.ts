@@ -1,5 +1,4 @@
 function myFind(arr:number[],number:number,callback:Function){
-    let result;
     callback(arr,number)
 }
 
